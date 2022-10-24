@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    
+    <title>Buscador de Gifs</title>
+</head>
+<body class="bg-secondary">
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark bg-gradient rounded-bottom shadow">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                   <label for="searchInput">
+                        <img src="assets/images/yaseen.gif" alt="Gato acenando" height="25px" class="d-inline-block align-text-top"> Buscador de GIFs
+                   </label>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbar">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="searchGif('Gatos')">Gatos ↯</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="searchGif('tombo')">Tombos ↯ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="searchGif('Rupauls Drag Race')">Drag Race ↯ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="searchGif('Simpsons')">Simpsons ↯ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="searchGif('Game of Thrones')">G.O.T ↯ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="searchGif('League Of Legends')">LoL ↯ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="searchGif('HIM PPG')">ELE ↯ </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="mainbanner">
+        <div class="container mt-5">
+            <div class="p-5 mb-4 bg-light bg-opacity-75 rounded-3 shadow-lg">
+                <div class="container-fluid py-5">
+                    <div class="d-flex">
+                        <h1 class="fw-bold display-5"><img src="assets/images/yaseen.gif" class="d-inline-block align-text-top" height="66px" alt="gatinho acenando"> Buscador de GIFs </h1><small>(with Tenor!)</small>
+                    </div>
+                    <p class="col-md-8 fs-4">
+                        Uma seleção dos melhores Gifs da internet!
+                    </p>
+                    <div class="container-fluid d-flex">
+                        <input type="search" class="form-control bg-light" placeholder="Digite aqui sua busca..." id="searchInput">
+                        <input type="submit" value="Buscar" class="btn btn-info w-25 input--icon mx-1 shadow-lg" id="searchBtn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container bg-light bg-opacity-25 rounded-3">
+            <div class="row gifs">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center my-3 container bg-light bg-opacity-75 rounded-3 p-2 shadow-lg">
+
+        Criado por <a class="link-dark" target=”_blank” href="https://www.linkedin.com/in/mayconhenrique/"><strong>Maycon H. Marques</strong></a> com auxilio da <a class="link-dark" target=”_blank” href="https://b7web.com.br/fullstack/"><strong>B7 Web</strong></a>
+
+    </footer>
+
+</body>
+</html>
